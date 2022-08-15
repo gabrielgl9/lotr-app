@@ -51,8 +51,8 @@ export default function Characters() {
       />
 
       <div className="content">
-        <table>
-          <thead>
+        <table className="border-spacing-y-2">
+          <thead className="bg-blue-600 text-white">
             <tr>
               <th> Nome </th>
               <th> Raça </th>
@@ -85,13 +85,6 @@ export default function Characters() {
           </tbody>
         </table>
       </div>
-
-      <Pagination
-        currentPage={currentPage}
-        totalPages={totalPages}
-        totalResults={totalResults}
-        changePage={setPage}
-      />
     </main>
   )
 }
